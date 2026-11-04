@@ -237,3 +237,14 @@ footer{background:var(--fundo-rodape);padding-block:56px calc(40px + env(safe-ar
 .etapas-lista li{color:var(--suave);font-size:18px;line-height:1.6}
 .etapas-lista b{color:var(--texto)}
 .leitura .cab-bloco{margin-bottom:8px}
+
+
+/* ---- capas dos artigos (protótipo) ---- */
+.blog-card a{padding:0;overflow:hidden;gap:0}
+.blog-card .capa-box{display:block;aspect-ratio:16/9;overflow:hidden;border-bottom:1px solid var(--linha);background:var(--fundo)}
+.blog-card .capa{display:block;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.blog-card a:hover .capa{transform:scale(1.04)}
+.blog-card .corpo{display:flex;flex-direction:column;gap:12px;padding:22px 24px 24px;flex:1}
+.capa-artigo{margin:34px 0 0;border-radius:18px;overflow:hidden;border:1px solid var(--linha);
+  box-shadow:0 34px 70px -34px rgba(0,0,0,.65);max-width:980px}
+.capa-artigo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
